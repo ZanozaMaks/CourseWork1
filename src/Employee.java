@@ -7,11 +7,11 @@ public class Employee {
     private long id;
     private String fullName;
 
-    private String department;
+    private int department;
 
     private double salary;
 
-    public Employee(String fullName, String department, double salary) {
+    public Employee(String fullName, int department, double salary) {
         this.fullName = fullName;
         this.department = department;
         this.salary = salary;
@@ -26,7 +26,7 @@ public class Employee {
         return fullName;
     }
 
-    public String getDepartment() {
+    public int getDepartment() {
         return department;
     }
 
@@ -34,7 +34,7 @@ public class Employee {
         return salary;
     }
 
-    public void setDepartment(String department) {
+    public void setDepartment(int department) {
         this.department = department;
     }
 
